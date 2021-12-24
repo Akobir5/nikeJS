@@ -1,2 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:  "Inter",system-ui;
+    outline: none;
+}
 
+body {
+    background: #e7f6ff;
+}
 
+.boxShoes {
+    width: 1085px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 45px;
+    border-bottom: 1px solid #cadbe6;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo a .logoImg img {
+    width: 40px;
+}
+
+.logo a .logoText {
+    margin-left: 10px;
+}
+
+.accountBox {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.accountBox li {
+    display: flex;
+    align-items: center;
+}
+
+.accountBox li:nth-of-type(2) {
+    margin: 0 10px;
+}
+
+.accountBox li img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.buttonOfBusket {
+    cursor: pointer;
+}
+
+.shopBox {
+    padding: 50px 45px;
+}
+
+.searchBlock {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 0px 40px;
+}
+
+.boxInput {
+    width: 240px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #aab4bb;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+.buttonSearch, .searchInput {
+    border: none;
+    background: transparent;
+}
+
+.buttonSearch {
+    cursor: pointer;
+}
+
+.searchInput {
+    width: 97%;
+    padding: 5px 10px;
+    font-size: 17px;
+}
+
+.shoeCargo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.shoeShopBox {
+    width: 205px;
+    height: 295px;
+    border: 1px solid #d5e3eb;
+    border-radius: 35px;
+    margin: 0 0 20px;
+    padding: 20px;
+}
