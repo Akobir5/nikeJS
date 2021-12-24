@@ -118,7 +118,7 @@ body {
     padding: 20px;
     position: relative;
     cursor: pointer;
-    transition: 0.9s ease;
+    transition: 0.2s ease;
 }
 
 .unlikeBtn {
@@ -164,6 +164,6 @@ body {
 
 .shoeShopBox:hover {
     box-shadow: 0 15px 20px #f3f3f3;
-    transform: translateY(-20px);
-    transition: 0.7s ease;
+    transform: translateY(-15px);
+    transition: 0.4s ease-in-out;
 }

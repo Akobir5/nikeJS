@@ -104,18 +104,24 @@ for (let i = 0; i < 12; i++) {
 
     shoeCargo.appendChild(shoeShopBox)
 
-    divLike.addEventListener('click', (e) => {
-        // unlikeBtn.style.display = 'none'
-        // let like = document.createElement('img')
-        // like.setAttribute('src', 'https://wisperwindoxas.github.io/sneaker/img/heart-liked.svg')
-        // like.classList.add('unlikeBtn')
-        // divLike.appendChild(like)
-        unlikeBtn.setAttribute('src', 'https://wisperwindoxas.github.io/sneaker/img/heart-liked.svg')
+    unlikeBtn.addEventListener('click', () => {
+        unlikeBtn.classList.toggle("redPlus")
 
+        if (unlikeBtn.classList.contains('redPlus')) {
+            unlikeBtn.setAttribute('src', 'https://wisperwindoxas.github.io/sneaker/img/heart-liked.svg')
+        }else {
+            unlikeBtn.setAttribute('src', 'https://wisperwindoxas.github.io/sneaker/img/heart-unliked.svg')
+        }
     })
 
     addShoe.addEventListener('click', () => {
-        addImg.setAttribute('src', 'https://wisperwindoxas.github.io/sneaker/img/btn-plus.svg')
+        addImg.classList.toggle('greenPlus') 
+
+            if(addImg.classList.contains('greenPlus')) {
+                addImg.setAttribute('src', 'https://wisperwindoxas.github.io/sneaker/img/btn-plus.svg')
+            } else {
+                addImg.setAttribute('src', 'https://wisperwindoxas.github.io/sneaker/img/plus.svg')
+            }
     })
 
 }
