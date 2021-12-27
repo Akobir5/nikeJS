@@ -1,4 +1,5 @@
 let shoeCargo = document.querySelector('.shoeCargo')
+let searchInp = document.querySelector('.searchInput')
 
 let shoes = [
     {
@@ -123,8 +124,12 @@ for (let i = 0; i < 12; i++) {
                 addImg.setAttribute('src', 'https://wisperwindoxas.github.io/sneaker/img/plus.svg')
             }
     })
-
 }
 
+searchInp.addEventListener('input', (e) => {
+    const searchShoe = shoes.filter(item => searchInp.value)
 
+
+
+ })
 
