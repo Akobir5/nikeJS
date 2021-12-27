@@ -127,9 +127,22 @@ for (let i = 0; i < 12; i++) {
 }
 
 searchInp.addEventListener('input', (e) => {
-    const searchShoe = shoes.filter(item => searchInp.value)
+    let searchShoe = document.querySelectorAll('.shoeShopBox h5') 
+    let searchShoeBlock = document.querySelectorAll('.shoeShopBox') 
 
-
+    if (searchInp.value !== " ") {
+        searchShoe.forEach((item, index) => {
+            if(item.textContent.search(searchInp.value)) {
+                item.style.visibility = 'hidden'
+                searchShoeBlock[index].style.visibility = 'hidden'
+            } else {
+                item.style.visibility = 'visible'
+                searchShoeBlock[index].style.visibility = 'visible'
+            }
+        })
+    } else {
+        item.style.visibility = 'hidden'
+    }
 
  })
 
