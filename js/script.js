@@ -126,23 +126,20 @@ for (let i = 0; i < 12; i++) {
     })
 }
 
-searchInp.addEventListener('input', (e) => {
-    let searchShoe = document.querySelectorAll('.shoeShopBox h5') 
-    let searchShoeBlock = document.querySelectorAll('.shoeShopBox') 
+searchInp.addEventListener('input', () => {
+    let searchShoe = document.querySelectorAll('.shoeShopBox h5')
+    let searchShoeBlock = document.querySelectorAll('.shoeShopBox')
 
     if (searchInp.value !== " ") {
         searchShoe.forEach((item, index) => {
-            if(item.textContent.search(searchInp.value)) {
-                item.style.visibility = 'hidden'
-                searchShoeBlock[index].style.visibility = 'hidden'
+            if(item.textContent.toLowerCase().search(searchInp.value.toLowerCase()) === -1) {
+                item.style.display = 'none'
+                searchShoeBlock[index].style.display = 'none'
             } else {
-                item.style.visibility = 'visible'
-                searchShoeBlock[index].style.visibility = 'visible'
+                item.style.display = 'flex'
+                searchShoeBlock[index].style.display = 'flex'
             }
         })
-    } else {
-        item.style.visibility = 'hidden'
-    }
-
+    } 
  })
 
