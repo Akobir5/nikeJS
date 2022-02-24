@@ -1,5 +1,11 @@
 let shoeCargo = document.querySelector('.shoeCargo')
 let searchInp = document.querySelector('.searchInput')
+let menuBtn = document.querySelector('.menuBtn')
+let menuResponse = document.querySelector('.menuResponse')
+
+menuBtn.addEventListener('click', () => {
+    menuResponse.classList.toggle('showMenu')
+})
 
 let shoes = [
     {
